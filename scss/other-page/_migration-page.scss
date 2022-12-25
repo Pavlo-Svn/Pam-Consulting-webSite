@@ -1,0 +1,116 @@
+.migration-top {
+    background-image: url(../../img/migration-page/main-migration-bg-pc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center;
+
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-left: 15%;
+        padding-right: 0;
+        min-height: calc(100vh - 120px);
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        color: #434364;
+        text-align: center;
+    }
+
+    @media (max-width:1000px) {
+        background-image: url(../../img/migration-page/main-migration-bg-mobile.jpeg);
+        background-position: top center;
+
+        &__container {
+            align-items: start;
+            justify-content: center;
+            padding: 10% 0;
+        }
+    }
+
+    @media (max-width:500px) {
+        min-height: calc(100vh - 80px);
+    }
+}
+
+.migration {
+
+    &__information-wrapper {
+        background-color: #6D31D0;
+    }
+
+    &__information-container {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    &__information {
+        padding: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+}
+
+.migration-help {
+    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+
+    &__container {
+        padding: 80px 15px;
+        text-align: center;
+        max-width: 780px;
+    }
+
+    &__title {
+        font-family: 'Avenir Next';
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #434364;
+    }
+
+    &__text {
+        margin-top: 60px;
+        font-family: 'Avenir Next';
+        color: #434364;
+
+    }
+
+    &__list {
+        margin-top: 30px;
+
+    }
+
+    &__list-item {
+        margin-bottom: 10px;
+        position: relative;
+        
+    }
+
+    &__list-link {
+        color: #6D31D0;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            left: -10px;
+            top: 7px;
+            border-radius: 50%;
+            background-color: #6D31D0;
+        }
+    }
+}

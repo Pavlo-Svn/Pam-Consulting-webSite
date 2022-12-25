@@ -1,0 +1,232 @@
+//VARIABLES
+
+// Заголовки, однанові БЄМ блоки і інше...
+[class*="__container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.button-gradent {
+    padding: 16px 22px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #6D31D0;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+    border-radius: 88.1657px;
+}
+
+.button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #6D31D0;
+    white-space: nowrap;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+    border-radius: 88.1657px;
+    padding: 16px 22px;
+    transition: all 0.3s linear;
+    border: 1px solid #FFDB80;
+
+    &:hover {
+        color: #FFDB80;
+        background: linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
+        border: 1px solid #FFDB80;
+        box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+    }
+}
+
+//======== pagination==========
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(177deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 3px solid;
+    border-color: #FFFFFF;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+}
+
+.ask {
+    text-align: center;
+    background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 60px;
+    }
+
+    &__swiper {
+        min-height: 520px;
+    }
+
+    &__swiper-wrapper {
+        height: 700px;
+    }
+
+    &__swiper-slide {
+        max-width: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
+        border-radius: 21px;
+
+    }
+
+    &__swiper-slide-img {
+        img{
+            width: 100%;
+        }
+    }
+
+    &__swiper-slide-text {
+        padding: 20px 30px 40px;
+    }
+
+    &__swiper-slide-question {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #6D31D0;
+    }
+
+    &__swiper-slide-answer {
+        letter-spacing: 0.5px;
+        color: #434364;
+
+    }
+
+    &__swiper-pagination {}
+}
+#ask__swiper-pagination{
+    position: relative;
+    display: flex;
+    width: 100%;
+    bottom: -30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+//=========================================INFO_PAGE================
+.page-info {
+
+    &__cont {
+        margin: 80px auto;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__text {
+        max-width: 580px;
+        padding: 0 15px;
+    }
+
+    &__title {
+        font-family: 'Avenir Next';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #434364;
+        margin-bottom: 34px;
+    }
+
+    &__item-text {
+        font-family: 'Avenir Next';
+        letter-spacing: 0.5px;
+        color: #434364;
+        margin-bottom: 25px;
+
+    }
+
+    &__list {
+        margin-bottom: 25px;
+    }
+
+    &__list-item {
+        font-family: 'Avenir Next';
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        color: #434364;
+        padding-left: 15px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            left: 0;
+            top: 8px;
+            border-radius: 50%;
+            background-color: #434364;
+        }
+    }
+
+    &__img {
+        position: relative;
+        max-width: 780px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width:1000px) {
+        &__items {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                flex-direction: column;
+            }
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+    }
+}
+//=========================================////INFO_PAGE================
